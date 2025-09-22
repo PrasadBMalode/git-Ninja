@@ -1,0 +1,3 @@
+class GameingLaptop extends LaptopSpace{
+
+}

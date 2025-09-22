@@ -1,0 +1,3 @@
+class OnlineMovie extends Movie{
+	
+}

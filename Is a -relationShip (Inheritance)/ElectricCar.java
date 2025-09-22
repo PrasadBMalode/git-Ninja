@@ -1,0 +1,3 @@
+class ElectricCar extends CarDetails{
+	
+}

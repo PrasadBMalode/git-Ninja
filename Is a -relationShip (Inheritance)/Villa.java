@@ -1,0 +1,3 @@
+class Villa extends House{
+	
+}

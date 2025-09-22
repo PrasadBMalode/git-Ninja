@@ -1,0 +1,3 @@
+class OnlineFood extends Restaurent{
+	
+}
