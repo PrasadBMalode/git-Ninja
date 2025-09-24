@@ -1,8 +1,11 @@
 class Movies{
 	String name;
 	
-	public static void main(String [] args){
-		name="kgf";
+	public Movies(){
+		this("kgf");
+	}
+	public Movies(String name){
+		
 	}
 	
 }
