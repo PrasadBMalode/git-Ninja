@@ -8,6 +8,10 @@ class Ravi extends Hero{
 	public char raviGender;
 	public boolean raviISGoodActor;
 	
+	public Ravi(){
+		System.out.println("this is non argument Ravi Constructor");
+	}
+	
 	public Ravi(String filmIndustry,int raviAge,long raviNumber,float raviHeight,
 	              double movieTicket,char raviGender,boolean raviISGoodActor){
 					  
