@@ -35,6 +35,14 @@ class Ravi extends Hero{
 		System.out.println("his avg movie ticket price=="+this.movieTicket);
 		System.out.println("ravi gender is=="+this.raviGender);
 		System.out.println("He is a good actore=="+this.raviISGoodActor);
+		
+		System.out.println(""+super.heroName);
+		System.out.println(""+super.heroAge);
+		System.out.println(""+super.heroNumber);
+		System.out.println(""+super.heroHeight);
+		System.out.println(""+super.heroMovieTicket);
+		System.out.println(""+super.heroGender);
+		System.out.println(""+super.ISGoodActor);
 	}
 	
 }
