@@ -9,13 +9,14 @@ class Ravi extends Hero{
 	public boolean raviISGoodActor;
 	
 	public Ravi(){
+		super();
 		System.out.println("this is non argument Ravi Constructor");
 	}
 	
 	public Ravi(String filmIndustry,int raviAge,long raviNumber,float raviHeight,
 	              double movieTicket,char raviGender,boolean raviISGoodActor){
 					  
-					  super();   //it will access the all property of parent class.
+					  this();
 					  
 					  this.filmIndustry=filmIndustry;
 					  this.raviAge=raviAge;
@@ -24,6 +25,14 @@ class Ravi extends Hero{
 					  this.movieTicket=movieTicket;
 					  this.raviGender=raviGender;
 					  this.raviISGoodActor=raviISGoodActor;
+					  
+					  super.filmIndustry=filmIndustry;
+					  super.raviAge=raviAge;
+					  super.raviNumber=raviNumber;
+					  super.raviHeight=raviHeight;
+					  super.movieTicket=movieTicket;
+					  super.raviGender=raviGender;
+					  super.raviISGoodActor=raviISGoodActor;
 		
 	}
 	
@@ -36,13 +45,13 @@ class Ravi extends Hero{
 		System.out.println("ravi gender is=="+this.raviGender);
 		System.out.println("He is a good actore=="+this.raviISGoodActor);
 		
-		System.out.println(""+super.heroName);
-		System.out.println(""+super.heroAge);
-		System.out.println(""+super.heroNumber);
-		System.out.println(""+super.heroHeight);
-		System.out.println(""+super.heroMovieTicket);
-		System.out.println(""+super.heroGender);
-		System.out.println(""+super.ISGoodActor);
+		System.out.println("Ravi belongs which Film industry=="+super.filmIndustry);
+		System.out.println("ravi age=="+super.raviAge);
+		System.out.println("mobile number=="+super.raviNumber);
+		System.out.println("his height=="+super.raviHeight);
+		System.out.println("his avg movie ticket price=="+super.movieTicket);
+		System.out.println("ravi gender is=="+super.raviGender);
+		System.out.println("He is a good actore=="+super.raviISGoodActor);
 	}
 	
 }

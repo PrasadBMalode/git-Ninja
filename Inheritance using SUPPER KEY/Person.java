@@ -8,13 +8,14 @@ class Person extends Doctor{
 	public boolean personisAlive;
 	
 	public Person(){
+		super();
 		System.out.println("this is non argument Persone Constructor");
 	}
 	
 	public Person(String personName, int personSalary, long personNumber, float personHeight,
                    	double personWeight, char personGender, boolean personisAlive){
 		
-						super();
+						this();
 						
 						this.personName=personName;
 						this.personSalary=personSalary;
@@ -23,6 +24,16 @@ class Person extends Doctor{
 						this.personWeight=personWeight;
 						this.personGender=personGender;
 						this.personisAlive=personisAlive;
+						
+						super.personName=personName;
+						super.personSalary=personSalary;
+						super.personNumber=personNumber;
+						super.personHeight=personHeight;
+						super.personWeight=personWeight;
+						super.personGender=personGender;
+						super.personisAlive=personisAlive;
+						
+						
 	}
 	
 	public void displayPerson(){
@@ -34,12 +45,12 @@ class Person extends Doctor{
 		System.out.println("his gender=="+this.personGender);
 		System.out.println("he still Alive=="+this.personisAlive);
 		
-		System.out.println(""+super.doctorName);
-		System.out.println(""+super.doctorSalary);
-		System.out.println(""+super.doctorNumber);
-		System.out.println(""+super.doctorHeight);
-		System.out.println(""+super.doctorWeight);
-		System.out.println(""+super.doctorGender);
-		System.out.println(""+super.isActive);
+		System.out.println("Person name=="+super.personName);
+		System.out.println("his salary=="+super.personSalary);
+		System.out.println("his number=="+super.personNumber);
+		System.out.println("his height=="+super.personHeight);
+		System.out.println("his weight=="+super.personWeight);
+		System.out.println("his gender=="+super.personGender);
+		System.out.println("he still Alive=="+super.personisAlive);
 	}
 }

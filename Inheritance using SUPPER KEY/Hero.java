@@ -1,12 +1,12 @@
 class Hero{
 	
-	public String heroName;
-	public int heroAge;
-	public long heroNumber;
-	public float heroHeight;
-	public double heroMovieTicket;
-	public char heroGender;
-	public boolean ISGoodActor;
+	public String filmIndustry;
+	public int raviAge;
+	public long raviNumber;
+	public float raviHeight;
+	public double movieTicket;
+	public char raviGender;
+	public boolean raviISGoodActor;
 	
 	public Hero(){
 		System.out.println("this is non argument Hero Constructor");

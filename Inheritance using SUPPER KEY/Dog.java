@@ -8,12 +8,15 @@ class Dog extends Animal{
 	public boolean isDogVaccinated;
 	
 	public Dog(){
+		
+		super();
 		System.out.println("its a non argument Dog Constrector");
 	}
 	public Dog(String dogName, int dogId, long microChipNumber, float dogHeight, 
 	              double dogRunningSpeed, char dogGender, boolean isDogVaccinated){
 					  
-	 super();
+	 this();
+	 
 	 this.dogName=dogName;
 	 this.dogId=dogId;
 	 this.microChipNumber=microChipNumber;
@@ -21,6 +24,14 @@ class Dog extends Animal{
 	 this.dogRunningSpeed=dogRunningSpeed;
 	 this.dogGender=dogGender;
 	 this.isDogVaccinated=isDogVaccinated;
+	 
+	 super.dogName=dogName;
+	 super.dogId=dogId;
+	 super.microChipNumber=microChipNumber;
+	 super.dogHeight=dogHeight;
+	 super.dogRunningSpeed=dogRunningSpeed;
+	 super.dogGender=dogGender;
+	 super.isDogVaccinated=isDogVaccinated;
 	}
 	
 	public void dogDisplay(){
@@ -32,12 +43,12 @@ class Dog extends Animal{
 		System.out.println(""+this.dogGender);
 		System.out.println(""+this.isDogVaccinated);
 		
-		System.out.println(""+super.animalType);
-		System.out.println(""+super.speciesCount);
-		System.out.println(""+super.globalCount);
-		System.out.println(""+super.avgSize);
-		System.out.println(""+super.avgHeight);
-		System.out.println(""+super.cataogory);
-		System.out.println(""+super.endAngered);
+		System.out.println(""+super.dogName);
+		System.out.println(""+super.dogId);
+		System.out.println(""+super.microChipNumber);
+		System.out.println(""+super.dogHeight);
+		System.out.println(""+super.dogRunningSpeed);
+		System.out.println(""+super.dogGender);
+		System.out.println(""+super.isDogVaccinated);
 	}
 }
