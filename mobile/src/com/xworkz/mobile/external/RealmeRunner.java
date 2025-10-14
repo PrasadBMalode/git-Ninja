@@ -10,6 +10,7 @@ public class RealmeRunner {
         CameraMP cameraMP=new CameraMP(60);
         Realme realme=new PoorvaShop("Realme Xt",128,22.999,cameraMP);
         realme.displayRealme();
+        cameraMP.displayCameraMP();
 
     }
 }

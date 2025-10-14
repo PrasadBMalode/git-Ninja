@@ -8,6 +8,7 @@ public class Floores {
 
     }
     public void displayFloores(){
+
         System.out.println("number of floores="+minNoOfFloores);
     }
 }

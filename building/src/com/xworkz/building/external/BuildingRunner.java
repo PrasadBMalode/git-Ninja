@@ -7,6 +7,7 @@ import com.xworkz.building.internal.Floores;
 public class BuildingRunner {
     public static void main(String[] args) {
         Floores floores=new Floores(23);
+        floores.displayFloores();
         Building building=new Colony("KVG",6,floores);
         building.displayBuilding();
     }
