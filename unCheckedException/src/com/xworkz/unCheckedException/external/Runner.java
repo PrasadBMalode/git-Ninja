@@ -57,5 +57,6 @@ public class Runner {
         obj.unsupportedOperationException();
         obj.webServiceException();
         obj.wrongMethodTypeException();
+        obj.dataBindingException();
     }
 }

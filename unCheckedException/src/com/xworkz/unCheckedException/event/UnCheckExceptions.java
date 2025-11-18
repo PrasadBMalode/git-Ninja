@@ -32,6 +32,7 @@ import javax.lang.model.type.MirroredTypesException;
 import javax.lang.model.type.MirroredTypeException;
 import java.util.MissingResourceException;
 import java.lang.NegativeArraySizeException;
+import javax.xml.bind.DataBindingException;
 import javax.xml.bind.TypeConstraintException;
 import javax.xml.crypto.NoSuchMechanismException;
 import java.awt.color.ProfileDataException;
@@ -48,6 +49,7 @@ import java.lang.invoke.WrongMethodTypeException;
 import java.util.concurrent.CompletionException;
 
 public class UnCheckExceptions {
+
     public void annotationTypeMissmatchException(){
         throw new AnnotationTypeMismatchException(null,null);
     }
@@ -206,5 +208,8 @@ public class UnCheckExceptions {
     }
     public void wrongMethodTypeException(){
         throw new WrongMethodTypeException();
+    }
+    public void dataBindingException(){
+        throw new DataBindingException(null);
     }
 }
