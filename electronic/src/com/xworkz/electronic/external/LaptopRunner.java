@@ -13,7 +13,7 @@ public class LaptopRunner {
         laptop.displaylapName("Ryzen");
 
         laptop.displayPrice(1000000);
-        
+
         laptop.displayRam(1277);
     }
 }
