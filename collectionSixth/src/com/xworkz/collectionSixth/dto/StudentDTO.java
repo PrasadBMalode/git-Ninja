@@ -1,6 +1,7 @@
 package com.xworkz.collectionSixth.dto;
 
-public class StudentDTO {
+public class StudentDTO  {
+
     private String studentName;
     private int studentId;
     private long studentNumber;
@@ -15,25 +16,20 @@ public class StudentDTO {
         return studentId;
     }
 
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
-    }
-
     public String getStudentName() {
         return studentName;
-    }
-
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
     }
 
     public long getStudentNumber() {
         return studentNumber;
     }
 
-    public void setStudentNumber(long studentNumber) {
-        this.studentNumber = studentNumber;
+    @Override
+    public String toString() {
+        return "StudentDTO{" +
+                "studentId=" + studentId +
+                ", studentName='" + studentName + '\'' +
+                ", studentNumber=" + studentNumber +
+                '}';
     }
-
-    
 }
