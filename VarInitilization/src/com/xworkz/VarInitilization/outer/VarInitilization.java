@@ -5,13 +5,10 @@ public class VarInitilization {
     VarInitilization(int a) {
             this.a = a;
         }
-
         static int getValue() {
             return 30;
         }
-
         public static void main(String[] args) {
-
             int a = 10;
             int b = a;
             int c = getValue();
