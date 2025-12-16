@@ -7,6 +7,7 @@ public class TicketPriceRunner {
     public void display(int parameterVar) {
         int localVar = 300;
 
+
         System.out.println(staticVar);
         System.out.println(instanceVar);
         System.out.println(localVar);
